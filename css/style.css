@@ -1,0 +1,250 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+/*============= TOP BAR HEADER =============*/
+
+.header-top{
+  padding: 18px 0 14px;
+}
+
+/*============= NAVIGATION =============*/
+nav{
+  z-index: 999999;
+  font-weight: bold;
+  font-size: large;
+}
+.navbar-toggler{
+  
+  float: left;
+  border: none;
+}
+
+/*============= Product Grid =============*/
+.container.product{
+  padding-top: 58px;
+}
+
+.product-grid{
+  padding-bottom: 28px;
+  padding-top: 28px;
+}
+
+.product-grid:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.2), 0 0 6px 0 rgba(0, 0,0, 0.19);
+}
+
+
+
+/*============= Product Details =============*/
+
+.product-details{
+  padding-top: 3rem;
+  
+ 
+
+}
+
+.details{
+margin-top: 1rem;
+
+}
+
+.product-details  h2{
+  font-size: 70px!important;
+  padding-bottom: 10px;
+  
+  
+}
+
+.product-details h5{
+  margin-top: 20px;
+
+}
+
+.bars{
+  margin: 30px 0 15px 0!important;
+}
+
+.progress{
+  margin: 0px 0 10px 0;
+  height: 30px;
+  border-radius: 0!important;
+}
+
+.details-home{
+ margin-top: 5rem;
+}
+
+.image3{
+  margin: 0 0 5px 5px;
+}
+
+
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+
+.fixed{
+  background-image: url('../img/dog3.png');
+  position: fixed;
+  
+}
+
+
+
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+  padding: 10rem 0;
+}
+
+
+
+
+
+
+/*-- Emoji Navbar --*/
+
+.emoji{
+  background-image: linear-gradient(to right, blue, red);
+  min-height: 0!important;
+  padding:.4rem 0 !important;
+}
+.emoji .svg-inline--fa{
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+}
+
+/*============= FOOTER =============*/
+footer{
+  background-color:#383838 ;
+  padding: 1rem 2rem 3rem;
+
+}
+
+footer img{
+  height: 3.5rem;
+  margin: 1.5rem auto ;
+}
+
+footer p,
+footer a,
+socket a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.social{
+  list-style-type: none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul.social li{
+  margin: 0 auto;
+}
+
+footer .svg-inline--fa{
+  font-size: 2.3rem;
+}
+
+
+/*============= SOCKET =============*/
+.socket{
+  background-color: #222222;
+  border-top: .1rem blue;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+  .carousel-caption h1{
+    font-size: 2.8rem;
+    
+  }
+  
+  .carousel-caption h3{
+    font-size: 1.2 rem;
+   
+  }
+}
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+  .carousel-caption h1{
+    font-size: 2.8rem;
+    
+  }
+  
+  .carousel-caption h3{
+    font-size: 1.2 rem;
+   
+  }
+bt-lg{
+  font-size: .95rem;
+}
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 3rem 0rem 3rem;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
